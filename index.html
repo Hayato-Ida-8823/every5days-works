@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>HAYABUSA.STUDIO</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body> 
+    <header>
+      <h1><a href="#"></a>HAYABUSA<span class="red-dot">.</span>STUDIO</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">ABOUT<span class="red-dot">.</span></a></li>
+          <li><a href="#works">WORKS<span class="red-dot">.</span></a></li>
+          <li><a href="#skills">SKILLS<span class="red-dot">.</span></a></li>
+          <li><a href="#contact">CONTACT<span class="red-dot">.</span></a></li>
+        </ul>
+      </nav>
+      <div class="clear"></div>
+    </header>
+    
+    <div class="top-wrapper">
+      <div class="top-container">
+        <div id="top-square">
+          <p class="top-chatch-text">HAYABUSA<span class="red-dot">.</span>STUDIO</p>
+          <a class="top-scroll" href="#about"><span></span>Scroll</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="about-wrapper"  id="about">
+      <div class="about-container">
+        <h2 class="heading">ABOUT<span class="red-dot">.</span></h2>
+        <div id="about-contents">
+          <div id="about-right">
+            <img src="images/about-image.jpeg">
+          </div>
+          <div id="about-left">
+            <ul>
+              <li>名前：はやぶさ</li>
+              <li>年齢：30歳</li>
+              <li>経歴：大手人材企業にて営業(6年)</li>
+              <li>→起業・経営(3年)</li>
+              <li>→プログラミング学習開始</li>
+            </ul>
+          </div>
+          <div class="clear"></div>
+      </div>
+          <p id="twitter-top"><a class="twitter-btn" href="https://twitter.com/Hayabusa_3288">Twitterはこちら</a></p>
+      </div>
+
+    </div>
+
+    
+
+    <div class="works-wrapper" id="works">
+      <div class="works-container">
+        <h2 class="heading">WORKS<span class="red-dot">.</span></h2>
+
+        <div class="works-box">
+          <div class="work">
+            <img src="images/works-1.png">
+            <h3>学習5日目制作物</h3>
+            <ul>
+              <li>制作物：ポートフォリオサイト</li>
+              <li>制作時間：3時間</li>
+              <li>使用スキル：HTML/CSS</li> 
+            </ul>
+          
+            <p><a class="btn" href="#">詳しく見る</a></p>
+          </div>
+          <div class="work">
+            <img src="images/works-1.png">
+            <h3>学習10日目制作物</h3>
+            <ul>
+              <li>制作物：ポートフォリオサイト</li>
+              <li>制作時間：3時間</li>
+              <li>使用スキル：HTML/CSS</li> 
+            </ul>
+          
+            <p><a class="btn" href="#">詳しく見る</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="skills-wrapper" id="skills">
+      <div class="skills-container">
+        <h2 class="heading">SKILLS<span class="red-dot">.</span></h2>
+        <div class="skill-flexbox">
+          <div class="skill-flexitem">
+            <img src="images/slkill-html.png">
+            <h3>HTML</h3>
+          </div>
+          <div class="skill-flexitem">
+            <img src="images/slkill-css.png">
+            <h3>CSS</h3>
+          </div>
+          <div class="skill-flexitem">
+            <img src="images/slkill-js.png">
+            <h3>JavaScript</h3>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="contact-wrapper" id="contact">
+      <div class="contact-container">
+        <h2 class="heading">CONTACT<span class="red-dot">.</span></h2>
+        <p>Twitterにて学習記録を配信しております。</p>
+        <p>お気軽にTwitterにてメッセージくださいませ。</p>
+        <a class="twitter-btn" id="footer-twitter" href="https://twitter.com/Hayabusa_3288">Twitterを見てみる</a>
+      </div>
+
+    </div>
+   
+    <footer>
+      <p>&copy;Copyright HAYABUSA all right reserved.</p>
+    </footer>
+
+
+    <script type="text/javascript">
+    $('header a').click(function(){
+      var id =$(this).attr('href');
+      var position = $(id).offset().top;
+      $('html, body').animate({
+      'scrollTop': position
+    },500
+    );
+
+    });
+    </script>
+
+  </body>
+</html>
