@@ -1,0 +1,365 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+/* レスポンシブ */
+
+@media(max-width:1000px){
+  header h1{
+    font-size:  24px;
+  }
+  header nav{
+    display: none;
+  }
+  #top-square p{
+    font-size:24px ;
+  }
+
+
+}
+
+
+
+
+
+
+
+/* 共通 */
+
+body{
+  font-family: sans-serif;
+}
+
+.red-dot{
+  color: red;
+}
+
+.clear{
+  clear: both;
+}
+
+.heading{
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ヘッダー */
+header{
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  position: fixed;
+}
+
+header h1{
+  color: white;
+  float: left;
+  line-height: 80px;
+  padding-left: 30px;
+
+}
+
+header nav{
+ float: right;
+ padding-right: 60px;
+}
+
+header ul{
+  list-style: none;
+  padding-top: 30px;
+}
+
+header ul li{
+  float: left;
+  margin-left: 20px;
+}
+header ul li:hover{
+  border-bottom: 2px solid white;
+}
+
+header ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* トップ */
+.top-wrapper{
+  width: 100%;
+  height: 650px;
+  background-image: url(images/top-image3.jpg);
+  background-size: cover;
+  opacity: 1;
+
+}
+.top-container{
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#top-square{
+  width: 90%;
+  height: 550px;
+  background-color:rgba(255,255,255,0.3);
+  margin: auto;
+}
+
+.top-scroll {
+  text-align: center;
+  color: white;
+  z-index: 2;
+  display: block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-decoration: none;
+  padding-top: 60px;
+}
+.top-scroll span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+
+.top-chatch-text{
+  color:black;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 600px;
+}
+
+/* アバウト */
+.about-wrapper{
+  width: 100%;
+  height: auto;
+
+}
+.about-container{
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+}
+
+
+#about-contents{
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap:wrap;
+
+}
+
+
+
+#about-right img{
+  width:300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+  
+}
+
+#about-left ul{
+  width: 350px;
+  height: 200px;
+  padding: 30px 0 0 30px;
+  text-align: center;
+
+}
+
+#about-left ul li{
+  font-size: 20px;
+  font-weight: bold;
+  list-style: none;
+}
+
+#twitter-top{
+  text-align: center;
+}
+
+.twitter-btn{
+  width: 300px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 15px 40px;
+  background-color: skyblue;
+  border-radius: 5px;
+  opacity: 0.8;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.twitter-btn:hover{
+  background-color: skyblue;
+  opacity: 1;
+}
+
+
+/* ワークス */
+
+.works-wrapper{
+  width: 100%;
+  height: auto;
+  background-color:lightgrey;
+}
+
+.works-container{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.works-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+
+.work{
+  padding: 30px;
+  text-align: center;
+}
+
+.work img{
+  width: 350px;
+}
+
+.work h3{
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.work ul{
+  display: block;
+  padding-top: 15px;
+}
+
+.work ul li{
+  list-style: none;
+  font-size: 14px;
+}
+
+.btn{
+  margin-top: 20px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 15px 30px;
+  background-color:#D85350;
+  opacity: 0.8;
+  border-radius: 5px;
+  display: inline-block;
+  width: 300px;
+}
+
+.btn:hover{
+  background-color:#D85350;
+  opacity: 1; 
+}
+
+/* スキル */
+
+.skills-wrapper{
+  width: 100%;
+  height: auto;
+}
+
+.skills-container{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.skill-flexbox{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+
+.skill-flexitem{
+  padding: 10px;
+  margin:  10px;              /* 外側の余白 */
+  border-radius:  5px;  
+  text-align: center; 
+}
+
+/* コンタクト */
+
+.contact-wrapper{
+  width: 100%;
+  height: 350px;
+  background-color:lightgrey;
+
+}
+
+.contact-container{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.contact-container p{
+  padding-top: 20px;
+  font-size: 16px;
+
+}
+
+#footer-twitter{
+  margin-top: 40px;
+}
+
+
+/* フッター */
+
+footer{
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  color: white;
+  line-height: 80px;
+  font-size: 12px;
+  text-align: center;
+}
+
